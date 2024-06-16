@@ -1,0 +1,9 @@
+# Sam's Alacritty file
+live_config_reload = true
+import = [
+    "~/.config/alacritty/themes/themes/github_light.toml"
+]
+
+[font]
+size = 16
+normal = { family = "BlexMono Nerd Font Propo"}
