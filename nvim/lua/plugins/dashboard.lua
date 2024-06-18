@@ -26,7 +26,7 @@ return {
         -- stylua: ignore
         center = {
           { action = 'lua LazyVim.pick()()',                           desc = " Find File",       icon = " ", key = "f" },
-          { action = function () vim.api.nvim_input("<cmd>Oil --float<cr>") end, desc = " New File",        icon = " ", key = "n" },
+          { action = function () vim.api.nvim_input("<cmd>Oil --float<cr>") end, desc = " OIL",        icon = " ", key = "n" },
           { action = 'lua LazyVim.pick("oldfiles")()',                 desc = " Recent Files",    icon = " ", key = "r" },
           { action = 'lua LazyVim.pick("live_grep")()',                desc = " Find Text",       icon = " ", key = "g" },
           { action = 'lua LazyVim.pick.config_files()()',              desc = " Config",          icon = " ", key = "c" },
