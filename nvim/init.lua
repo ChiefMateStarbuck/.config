@@ -36,4 +36,8 @@ require("lspconfig").lua_ls.setup({
 
 -- OIL
 require("oil").setup()
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
+
+-- Enable spell checking and set the spell language to US English globally
+vim.opt.spell = true
+vim.opt.spelllang = "en_us"
