@@ -8,7 +8,9 @@ import = [
 size = 16
 normal = { family = "BlexMono Nerd Font Propo"}
 
-# make alt key work in zellijiwindow
-
-[window]
-option_as_alt = "Both"
+#vim tab swaps
+[keyboard]
+bindings = [
+  {key = "l", mods = "Command|Shift", action = "SelectNextTab"},
+  {key = "h", mods = "Command|Shift", action = "SelectPreviousTab"},
+]
