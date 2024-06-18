@@ -33,3 +33,7 @@ require("lspconfig").lua_ls.setup({
     Lua = {},
   },
 })
+
+-- OIL
+require("oil").setup()
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
