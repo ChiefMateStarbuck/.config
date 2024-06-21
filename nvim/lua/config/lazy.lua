@@ -86,3 +86,14 @@ vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory
 -- Enable spell checking and set the spell language to US English globally
 vim.opt.spell = true
 vim.opt.spelllang = "en_us"
+
+-- ToggleTerm
+require("toggleterm").setup({
+  open_mapping = [[<leader>tt]],
+  --terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
+  -- start_in_insert = true, not sure yet
+  insert_mappings = false,
+  hide_numbers = true,
+  direction = "float",
+  size = 15,
+})
