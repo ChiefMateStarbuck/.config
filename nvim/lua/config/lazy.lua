@@ -11,6 +11,7 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.lang.typescript" },
     -- { import = "lazyvim.plugins.extras.lang.json" },
@@ -91,7 +92,7 @@ vim.opt.spelllang = "en_us"
 require("toggleterm").setup({
   open_mapping = [[<leader>tt]],
   --terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
-  -- start_in_insert = true, not sure yet
+  start_in_insert = true,
   insert_mappings = false,
   hide_numbers = true,
   direction = "float",
