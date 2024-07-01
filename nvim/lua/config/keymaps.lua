@@ -31,3 +31,15 @@ vim.keymap.set(
   ":ToggleTerm size=15 direction=horizontal <cr>",
   { desc = "Open a horizontal terminal" }
 )
+
+-- Use option instead of control for moving between windows.
+vim.keymap.del("n", "<C-h>")
+vim.keymap.del("n", "<C-j>")
+vim.keymap.del("n", "<C-k>")
+vim.keymap.del("n", "<C-l>")
+
+-- Using the mac symbols is a hack because <A-j> format is not working. Only works in macOS
+vim.keymap.set("n", "˙", "<C-w>h", { desc = "Go to Left Window", remap = true })
+vim.keymap.set("n", "∆", "<C-w>j", { desc = "Go to Lower Window", remap = true })
+vim.keymap.set("n", "˚", "<C-w>k", { desc = "Go to Upper Window", remap = true })
+vim.keymap.set("n", "¬", "<C-w>l", { desc = "Go to Right Window", remap = true })
