@@ -85,8 +85,8 @@ require("oil").setup()
 vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
 
 -- Enable spell checking and set the spell language to US English globally
-vim.opt.spell = true
-vim.opt.spelllang = "en_us"
+-- vim.opt.spell = true
+-- vim.opt.spelllang = "en_us"
 
 -- ToggleTerm
 require("toggleterm").setup({
