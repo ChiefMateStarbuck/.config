@@ -75,7 +75,6 @@ venv.bak/
 *.gem
 *.rbc
 .bundle
-config.yml
 vendor/
 .rvmrc
 

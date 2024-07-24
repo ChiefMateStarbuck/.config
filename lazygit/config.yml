@@ -1,0 +1,4 @@
+customCommands:
+  - key: '<c-r>'
+    context: 'commits'
+    command: 'hub browse -- "commit/{{.SelectedLocalCommit.Hash}}"'
