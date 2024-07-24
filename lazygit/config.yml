@@ -41,7 +41,7 @@ customCommands:
     command: 'git-town prepend {{.Form.BranchName}}'
     stream: true
     loadingText: 'Prepending'
-  - key: 'r'
+  - key: '!'
     context: 'global'
     description: 'Git-Town Repo (opens the repo link)'
     command: 'git-town repo'
