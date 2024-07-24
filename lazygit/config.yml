@@ -10,7 +10,7 @@ customCommands:
     description: 'git-town Hack (creates a new branch)'
     prompts:
       - type: 'input'
-        title: 'Enter name of new branch'
+        title: "Enter name of new branch. Branches off of 'Main'"
         key: 'BranchName'
     command: 'git-town hack {{.Form.BranchName}}'
     stream: true
@@ -23,7 +23,7 @@ customCommands:
     loadingText: 'Creating pull request'
   - key: 'a'
     context: 'localBranches'
-    description: 'git-town Append (new branch as a child of the current branch)'
+    description: "git-town Append. Branches off of '{{.CheckedOutBranch.Name}}"
     prompts:
       - type: 'input'
         title: 'Enter name of new child branch'
