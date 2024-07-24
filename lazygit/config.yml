@@ -41,8 +41,3 @@ customCommands:
     command: 'git-town prepend {{.Form.BranchName}}'
     stream: true
     loadingText: 'Prepending'
-  - key: 'S'
-    context: 'localBranches'
-    description: "Git-Town Set-Parent. Update parent of the branch"
-    command: 'git-town set-parent'
-    showOutput: True
