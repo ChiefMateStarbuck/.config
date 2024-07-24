@@ -15,3 +15,19 @@ customCommands:
     command: 'git-town hack {{.Form.BranchName}}'
     stream: true
     loadingText: 'Hacking'
+  - key: 'p'
+    context: 'localBranches'
+    description: 'Git-Town Propose (creates a pull request)'
+    command: 'git-town propose'
+    stream: true
+    loadingText: 'Creating pull request'
+  - key: 'a'
+    context: 'localBranches'
+    description: 'git-town Append (new branch as a child of the current branch)'
+    prompts:
+      - type: 'input'
+        title: 'Enter name of new child branch'
+        key: 'BranchName'
+    command: 'git-town append {{.Form.BranchName}}'
+    stream: true
+    loadingText: 'Appending'
