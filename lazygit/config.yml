@@ -1,4 +1,17 @@
 customCommands:
-  - key: '<c-r>'
-    context: 'commits'
-    command: 'hub browse -- "commit/{{.SelectedLocalCommit.Hash}}"'
+  - key: 'Y'
+    context: 'global'
+    description: 'Git-Town sYnc'
+    command: 'git-town sync'
+    stream: true
+    loadingText: 'Syncing'
+  - key: 'h'
+    context: 'localBranches'
+    description: 'git-town Hack (creates a new branch)'
+    prompts:
+      - type: 'input'
+        title: 'Enter name of new branch'
+        key: 'BranchName'
+    command: 'git-town hack {{.Form.BranchName}}'
+    stream: true
+    loadingText: 'Hacking'
