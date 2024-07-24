@@ -33,10 +33,10 @@ customCommands:
     loadingText: 'Appending'
   - key: 'r'
     context: 'localBranches'
-    description: "git-town Prepend. Creates a branch between the currnet branch and its parent"
+    description: "git-town Prepend. Creates a branch between currnet branch and its parent"
     prompts:
       - type: 'input'
-        title: "Enter name of new name for child branch between '{{.CheckedOutBranch.Name}}' and '{{.CheckedOutBranch.UpstreamBranch}}'"
+        title: "Enter name of the for child branch between '{{.CheckedOutBranch.Name}}' and its parent"
         key: 'BranchName'
     command: 'git-town prepend {{.Form.BranchName}}'
     stream: true
