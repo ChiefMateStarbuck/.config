@@ -7,7 +7,7 @@ customCommands:
     loadingText: 'Syncing'
   - key: 'h'
     context: 'localBranches'
-    description: 'git-town Hack (creates a new branch)'
+    description: 'Git-Town Hack (creates a new branch)'
     prompts:
       - type: 'input'
         title: "Enter name of new branch. Branches off of 'Main'"
@@ -23,7 +23,7 @@ customCommands:
     loadingText: 'Creating pull request'
   - key: 'a'
     context: 'localBranches'
-    description: "git-town Append"
+    description: "Git-Town Append"
     prompts:
       - type: 'input'
         title: "Enter name of new child branch. Branches off of '{{.CheckedOutBranch.Name}}'"
@@ -31,9 +31,9 @@ customCommands:
     command: 'git-town append {{.Form.BranchName}}'
     stream: true
     loadingText: 'Appending'
-  - key: 'r'
+  - key: 'P'
     context: 'localBranches'
-    description: "git-town Prepend. Creates a branch between currnet branch and its parent"
+    description: "Git-Town Prepend. Creates a branch between the curent branch and its parent"
     prompts:
       - type: 'input'
         title: "Enter name of the for child branch between '{{.CheckedOutBranch.Name}}' and its parent"
@@ -41,3 +41,8 @@ customCommands:
     command: 'git-town prepend {{.Form.BranchName}}'
     stream: true
     loadingText: 'Prepending'
+  - key: 'S'
+    context: 'localBranches'
+    description: "Git-Town Set-Parent. Update parent of the branch"
+    command: 'git-town set-parent'
+    showOutput: True
