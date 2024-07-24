@@ -23,7 +23,7 @@ customCommands:
     loadingText: 'Creating pull request'
   - key: 'a'
     context: 'localBranches'
-    description: "git-town Append. Branches off of '{{.CheckedOutBranch.Name}}"
+    description: "git-town Append. Branches off of '{{.CheckedOutBranch.Name}}'"
     prompts:
       - type: 'input'
         title: 'Enter name of new child branch'
@@ -31,3 +31,13 @@ customCommands:
     command: 'git-town append {{.Form.BranchName}}'
     stream: true
     loadingText: 'Appending'
+  - key: 'r'
+    context: 'localBranches'
+    description: "git-town Prepend. Creates a branch between '{{.CheckedOutBranch.Name}}' and '{{.CheckedOutBranch.UpstreamBranch}}'"
+    prompts:
+      - type: 'input'
+        title: 'Enter name of new child branch'
+        key: 'BranchName'
+    command: 'git-town prepend {{.Form.BranchName}}'
+    stream: true
+    loadingText: 'Prepending'
