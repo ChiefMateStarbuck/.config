@@ -189,12 +189,17 @@ f = [
 ] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
+# Add buttons to movee across screens in a vim-like way
 alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
-# Add buttons to movee across screens in a vim-like way
 [workspace-to-monitor-force-assignment]
-O = 'main'      # Main monitor
-Y = 'secondary' # Non-main monitor in case when there are only two monitors
+O = 'main' # Main monitor
+I = 'main'
+Y = 1
+# This line makes U the default workspace on the second monitor when I would rather it be Y
+# This most likely due the config being read in alpabetical order.
+# TODO: Make an issue.
+# U = 1
