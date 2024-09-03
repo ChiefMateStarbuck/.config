@@ -202,4 +202,4 @@ Y = 1
 # This line makes U the default workspace on the second monitor when I would rather it be Y
 # This most likely due the config being read in alpabetical order.
 # TODO: Make an issue.
-# U = 1
+U = 1

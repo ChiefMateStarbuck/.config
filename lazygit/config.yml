@@ -56,6 +56,7 @@ customCommands:
     - type: 'confirm'
       title: 'Delete current feature branch'
       body: 'Are you sure you want to delete the current feature branch?'
+    subprocess: true
     stream: true
     loadingText: 'Killing Feature Branch'
   - key: 'p'
@@ -74,12 +75,19 @@ customCommands:
     command: 'git-town prepend {{.Form.BranchName}}'
     stream: true
     loadingText: 'Prepending'
-  - key: 'S'
+  - key: 'I'
     context: 'localBranches'
     description: 'Git-Town Skip (skip branch with merge conflicts when syncing)'
     command: 'git-town skip'
     stream: true
     loadingText: 'Skiping'
+  - key: 'S'
+    context: 'localBranches'
+    description: 'Git-Town Set-Parent (Manually set a new parent for the current branch'
+    command: 'git-town set-parent'
+    stream: true
+    subprocess: true
+    loadingText: 'Setting Parent'
   - key: 'G'
     context: 'files'
     description: 'Git-Town GO aka:continue (continue after resolving merge conflicts)'
