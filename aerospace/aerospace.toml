@@ -12,7 +12,7 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = ['workspace O']
+after-startup-command = ['workspace Y']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -196,10 +196,15 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-O = 'main' # Main monitor
+U = 'main' # Main monitor
 I = 'main'
-Y = 1
+O = 'main'
+P = 'main'
+T = 1
 # This line makes U the default workspace on the second monitor when I would rather it be Y
 # This most likely due the config being read in alpabetical order.
 # TODO: Make an issue.
-U = 1
+R = 1
+E = 'main'
+W = 'main'
+Q = 'main'
