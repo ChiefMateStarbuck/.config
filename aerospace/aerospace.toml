@@ -200,11 +200,17 @@ U = 'main' # Main monitor
 I = 'main'
 O = 'main'
 P = 'main'
+B = 'main'
+N = 'main'
+M = 'main'
 T = 1
 # This line makes U the default workspace on the second monitor when I would rather it be Y
 # This most likely due the config being read in alpabetical order.
 # TODO: Make an issue.
 R = 1
-E = 'main'
-W = 'main'
-Q = 'main'
+E = 1
+W = 1
+Q = 1
+V = 1
+C = 1
+X = 1
