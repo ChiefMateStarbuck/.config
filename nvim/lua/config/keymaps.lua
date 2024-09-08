@@ -5,7 +5,7 @@
 vim.keymap.set("n", "<leader>ww", "<cmd>w<cr>", { desc = "Write file" })
 
 -- make "qq" a little softer (only delete the current buffer)
--- vim.keymap.set("n", "<leader>qq", "<cmd>bd<cr>", { desc = "Quit current buffer" })
+vim.keymap.set("n", "<leader>qq", "<cmd>q<cr>", { desc = "Quit" })
 
 vim.keymap.set("n", "<leader>tf", ":ToggleTerm direction=float <cr>", { desc = "Open a floating window" })
 vim.keymap.set("n", "<leader>ta", ":ToggleTerm direction=tab <cr>", { desc = "Open a tab window" })
