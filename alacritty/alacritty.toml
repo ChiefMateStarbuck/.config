@@ -1,16 +1,14 @@
 # Sam's Alacritty file
 live_config_reload = true
-import = [
-    "~/.config/alacritty/themes/themes/github_light.toml"
-]
+import = ["~/.config/alacritty/themes/themes/github_light.toml"]
 
 [font]
 size = 16
-normal = { family = "BlexMono Nerd Font Propo"}
+normal = { family = "BlexMono Nerd Font Propo" }
 
 #vim tab swaps
 [keyboard]
 bindings = [
-  {key = "l", mods = "Command|Shift", action = "SelectNextTab"},
-  {key = "h", mods = "Command|Shift", action = "SelectPreviousTab"},
+  { key = "ArrowRight", mods = "Command|Alt", action = "SelectNextTab" },
+  { key = "ArrowLeft", mods = "Command|Alt", action = "SelectPreviousTab" },
 ]
