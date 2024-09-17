@@ -83,7 +83,11 @@ require("lspconfig").lua_ls.setup({
 })
 
 -- OIL
-require("oil").setup()
+require("oil").setup({
+  view_options = {
+    show_hidden = true,
+  },
+})
 vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
 
 -- Enable spell checking and set the spell language to US English globally
@@ -121,5 +125,11 @@ require("mini.move").setup({
   options = {
     -- Automatically reindent selection during linewise vertical move
     reindent_linewise = true,
+  },
+})
+
+require("telescope").setup({
+  defaults = {
+    file_ignore_patterns = { ".venv" },
   },
 })
