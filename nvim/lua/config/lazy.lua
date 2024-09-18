@@ -30,7 +30,6 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
@@ -94,21 +93,9 @@ vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory
 -- vim.opt.spell = true
 -- vim.opt.spelllang = "en_us"
 
--- ToggleTerm
-require("toggleterm").setup({
-  open_mapping = [[<leader>tt]],
-  --terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
-  start_in_insert = true,
-  insert_mappings = false,
-  hide_numbers = true,
-  direction = "float",
-  size = 15,
-})
-
 require("mini.move").setup({
   -- Module mappings. Use `''` (empty string) to disable one.
-  mappings = {
-    -- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
+  mappings = { -- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
     left = "",
     right = "",
     down = "J",

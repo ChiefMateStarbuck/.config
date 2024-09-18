@@ -7,11 +7,6 @@ vim.keymap.set("n", "<leader>ww", "<cmd>w<cr>", { desc = "Write file" })
 -- make "qq" a little softer (only delete the current buffer)
 vim.keymap.set("n", "<leader>qq", "<cmd>q<cr>", { desc = "Quit" })
 
-vim.keymap.set("n", "<leader>tf", ":ToggleTerm direction=float <cr>", { desc = "Open a floating window" })
-vim.keymap.set("n", "<leader>ta", ":ToggleTerm direction=tab <cr>", { desc = "Open a tab window" })
--- TODO: fix? doesnt open horizontally anymore?
-vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<cr>", { desc = "Toggle the current terminal on and off" })
-
 -- with the introduction of aerospace, switch back to using control for windows movement
 -- -- Use option instead of control for moving between windows.
 -- vim.keymap.del("n", "<C-h>")
