@@ -1,4 +1,4 @@
-theme = "w_and_b"
+theme = "white_and_black"
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
