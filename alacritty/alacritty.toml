@@ -3,13 +3,12 @@ live_config_reload = true
 import = ["~/.config/alacritty/themes/themes/github_light.toml"]
 
 [font]
-size = 16
-normal = { family = "BlexMono Nerd Font Propo" }
-italic = { family = "BlexMono Nerd Font Propo" }
-bold = { family = "BlexMono Nerd Font Propo" }
+size = 20
 #vim tab swaps
 [keyboard]
 bindings = [
   { key = "ArrowRight", mods = "Command|Alt", action = "SelectNextTab" },
   { key = "ArrowLeft", mods = "Command|Alt", action = "SelectPreviousTab" },
 ]
+[window]
+option_as_alt = "OnlyLeft"

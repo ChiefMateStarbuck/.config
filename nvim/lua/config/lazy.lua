@@ -93,8 +93,8 @@ vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory
 -- vim.opt.spell = true
 -- vim.opt.spelllang = "en_us"
 
+-- Move blocks of code using hjkl
 require("mini.move").setup({
-  -- Module mappings. Use `''` (empty string) to disable one.
   mappings = { -- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
     left = "",
     right = "",
@@ -115,8 +115,12 @@ require("mini.move").setup({
   },
 })
 
+-- Ignore files that muddy the telescope search
 require("telescope").setup({
   defaults = {
     file_ignore_patterns = { ".venv" },
   },
 })
+
+-- Zig LSP Server
+require("lspconfig").zls.setup({})
