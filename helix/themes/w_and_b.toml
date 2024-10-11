@@ -1,161 +1,149 @@
 # Author :ChiefMateStarbuck <septimusguy@gmail.com>
 
-"annotation"                      = { fg = "black"                                                     }
+# work on what to italics and what to bold
+#add bar ui color. foreground
 
-"attribute"                       = { fg = "black",              modifiers = ["italic"]                     }
+"annotation"                      = { fg = "foreground"                                                                          }
 
-"comment"                         = { fg = "black"                                                        }
-"comment.block"                   = { fg = "black"                                                        }
-"comment.block.documentation"     = { fg = "black"                                                        }
-"comment.line"                    = { fg = "black"                                                        }
+"attribute"                       = { fg = "foreground",              modifiers = ["italic"]                                     }
 
-"constant"                        = { fg = "black"                                                         }
-"constant.builtin"                = { fg = "black"                                                         }
-"constant.builtin.boolean"        = { fg = "black"                                                         }
-"constant.character"              = { fg = "black"                                                           }
-"constant.character.escape"       = { fg = "black"                                                           }
-"constant.macro"                  = { fg = "black"                                                         }
-"constant.numeric"                = { fg = "black"                                                         }
-"constructor"                     = { fg = "black"                                                         }
+"comment"                         = { fg = "foreground"                                                                          }
+"comment.block"                   = { fg = "foreground"                                                                          }
+"comment.block.documentation"     = { fg = "foreground"                                                                          }
+"comment.line"                    = { fg = "foreground"                                                                          }
 
-"definition"                      = { underline = { color = "black"                                        } }
-"diagnostic"                      = { underline = { color = "black",          style = "curl"             } }
-"diagnostic.hint"                 = { underline = { color = "black",          style = "curl"             } }
-"diagnostic.warning"              = { underline = { color = "black",          style = "curl"             } }
-# clean up spacing
-"diagnostic.error"                = { underline = { color = "black",             style = "curl"             } }
-"diagnostic.info"                 = { underline = { color = "black",            style = "curl"             } }
-"diagnostic.unnecessary"          = { modifiers = ["dim"]                                                   }
-"diagnostic.deprecated"           = { modifiers = ["crossed_out"]                                           }
+"constant"                        = { fg = "foreground"                                                                          }
+"constant.builtin"                = { fg = "foreground"                                                                          }
+"constant.builtin.boolean"        = { fg = "foreground"                                                                          }
+"constant.character"              = { fg = "foreground"                                                                          }
+"constant.character.escape"       = { fg = "foreground"                                                                          }
+"constant.macro"                  = { fg = "foreground"                                                                          }
+"constant.numeric"                = { fg = "foreground"                                                                          }
+"constructor"                     = { fg = "foreground"                                                                          }
 
-"error"                           = { fg    = "black"                                                         }
-"hint"                            = { fg    = "black"                                                      }
-"info"                            = { fg    = "black"                                                        }
-"warning"                         = { fg    = "black"                                                      }
+"definition"                      = { underline = { color = "foreground"                                                         } }
+"diagnostic"                      = { underline = { color = "foreground",          style = "curl"                                }        }
+"diagnostic.hint"                 = { underline = { color = "foreground",          style = "curl"                                }      }
+"diagnostic.warning"              = { underline = { color = "foreground",          style = "curl"                                }      }
+# clean up spacing. might need a server.
+"diagnostic.error"                = { underline = { color = "foreground",             style = "curl"                             }   }
+"diagnostic.info"                 = { underline = { color = "foreground",            style = "curl"                              }    }
+"diagnostic.unnecessary"          = { modifiers = ["dim"]                                                                        }
+"diagnostic.deprecated"           = { modifiers = ["crossed_out"]                                                                }
 
-"diff.delta"                      = { fg    = "black"                                                      }
-"diff.minus"                      = { fg    = "black"                                                         }
-"diff.plus"                       = { fg    = "black"                                                       }
+"error"                           = { fg    = "foreground"                                                                       }
+"hint"                            = { fg    = "foreground"                                                                       }
+"info"                            = { fg    = "foreground"                                                                       }
+"warning"                         = { fg    = "foreground"                                                                       }
+
+"diff.delta"                      = { fg    = "foreground"                                                                       }
+"diff.minus"                      = { fg    = "foreground"                                                                       }
+"diff.plus"                       = { fg    = "foreground"                                                                       }
 
 # d
-"function"                        = { fg = "black"                                                          }
-"function.builtin"                = { fg = "black"                                                          }
-"function.call"                   = { fg = "black"                                                          }
-"function.macro"                  = { fg = "black"                                                         }
-"function.method"                 = { fg = "black"                                                          }
+"function"                        = { fg = "foreground"                                                                          }
+"function.builtin"                = { fg = "foreground"                                                                          }
+"function.call"                   = { fg = "foreground"                                                                          }
+"function.macro"                  = { fg = "foreground"                                                                          }
+"function.method"                 = { fg = "foreground"                                                                          }
 
-"keyword"                         = { fg = "black"                                                           }
-"keyword.control.conditional"     = { fg = "black"                                                           }
-"keyword.control.exception"       = { fg = "black"                                                         }
-"keyword.control.import"          = { fg = "black"                                                           }
-"keyword.control.repeat"          = { fg = "black"                                                           }
-"keyword.directive"               = { fg = "black"                                                          }
-"keyword.function"                = { fg = "black"                                                           }
-"keyword.operator"                = { fg = "black"                                                           }
-"keyword.return"                  = { fg = "black"                                                           }
-"keyword.storage"                 = { fg = "black"                                                           }
-"keyword.storage.modifier"        = { fg = "black"                                                           }
-"keyword.storage.type"            = { fg = "black",               modifiers = ["italic"]                     }
+"keyword"                         = { fg = "foreground"                                                                          }
+"keyword.control.conditional"     = { fg = "foreground"                                                                          }
+"keyword.control.exception"       = { fg = "foreground"                                                                          }
+"keyword.control.import"          = { fg = "foreground"                                                                          }
+"keyword.control.repeat"          = { fg = "foreground"                                                                          }
+"keyword.directive"               = { fg = "foreground"                                                                          }
+"keyword.function"                = { fg = "foreground"                                                                          }
+"keyword.operator"                = { fg = "foreground"                                                                          }
+"keyword.return"                  = { fg = "foreground"                                                                          }
+"keyword.storage"                 = { fg = "foreground"                                                                          }
+"keyword.storage.modifier"        = { fg = "foreground"                                                                          }
+"keyword.storage.type"            = { fg = "foreground",               modifiers = ["italic"]                                    }
 
-"label"                           = { fg = "black"                                                           }
+"label"                           = { fg = "foreground"                                                                          }
 
-"markup.bold"                     = { fg    = "black",          modifiers = ["bold"]                       }
-"markup.heading"                  = { fg    = "black",          modifiers = ["bold"]                       }
-"markup.italic"                   = { fg    = "black",          modifiers = ["italic"]                     }
-"markup.link.text"                = { fg    = "black"                                                        }
-"markup.link.url"                 = { fg    = "black"                                                        }
-"markup.list"                     = { fg    = "black"                                                        }
-"markup.quote"                    = { fg    = "black",          modifiers = ["italic"]                     }
-"markup.raw"                      = { fg    = "black"                                                  }
-"markup.strikethrough"            = {                            modifiers = ["crossed_out"]                }
+"markup.bold"                     = { fg    = "foreground",          modifiers = ["bold"]                                        }
+"markup.heading"                  = { fg    = "foreground",          modifiers = ["bold"]                                        }
+"markup.italic"                   = { fg    = "foreground",          modifiers = ["italic"]                                      }
+"markup.link.text"                = { fg    = "foreground"                                                                       }
+"markup.link.url"                 = { fg    = "foreground"                                                                       }
+"markup.list"                     = { fg    = "foreground"                                                                       }
+"markup.quote"                    = { fg    = "foreground",          modifiers = ["italic"]                                      }
+"markup.raw"                      = { fg    = "foreground"                                                                       }
+"markup.strikethrough"            = {                            modifiers = ["crossed_out"]                                     }
 
-"punctuation"                     = { fg = "black"                                                     }
-"punctuation.bracket"             = { fg = "black"                                                     }
-"punctuation.delimiter"           = { fg = "black"                                                     }
-"punctuation.special"             = { fg = "black"                                                           }
+"punctuation"                     = { fg = "foreground"                                                                          }
+"punctuation.bracket"             = { fg = "foreground"                                                                          }
+"punctuation.delimiter"           = { fg = "foreground"                                                                          }
+"punctuation.special"             = { fg = "foreground"                                                                          }
 
-"special"                         = { fg = "black"                                                           }
+"special"                         = { fg = "foreground"                                                                          }
 
-"string"                          = { fg = "black"                                                         }
-"string.regexp"                   = { fg = "black"                                                            }
-"string.special"                  = { fg = "black"                                                         }
-"string.symbol"                   = { fg = "black"                                                         }
+"string"                          = { fg = "foreground"                                                                          }
+"string.regexp"                   = { fg = "foreground"                                                                          }
+"string.special"                  = { fg = "foreground"                                                                          }
+"string.symbol"                   = { fg = "foreground"                                                                          }
 
-"tag"                             = { fg = "black"                                                           }
-"tag.attribute"                   = { fg = "black"                                                         }
-"tag.delimiter"                   = { fg = "black"                                                     }
+"tag"                             = { fg = "foreground"                                                                          }
+"tag.attribute"                   = { fg = "foreground"                                                                          }
+"tag.delimiter"                   = { fg = "foreground"                                                                          }
 
-"type"                            = { fg = "black",               modifiers = ["italic"]                     }
-"type.builtin"                    = { fg = "black"                                                           }
-"type.enum.variant"               = { fg = "black",         modifiers = ["italic"]                     }
+"type"                            = { fg = "foreground",               modifiers = ["italic"]                                    }
+"type.builtin"                    = { fg = "foreground"                                                                          }
+"type.enum.variant"               = { fg = "foreground",         modifiers = ["italic"]                                          }
 
-"ui.background"                   = { fg    = "black",      bg = "white"                          }
+"ui.background"                   = { fg    = "foreground",      bg = "background"                                               }
 #work on cursor colors becaus highlighting is very dark
-"ui.cursor"                       = { fg    = "white",      bg = "grey",        modifiers = ["dim"]  }
-"ui.cursor.insert"                = { fg    = "black",      bg = "grey",         modifiers = ["dim"]  }	
-"ui.cursor.match"                 = { fg    = "black",      bg = "grey"                                }
-"ui.cursor.normal"                = { fg    = "black",      bg = "grey",        modifiers = ["dim"]  }	
+"ui.cursor"                       = { fg    = "background",      bg = "primary",        modifiers = ["dim"]                      }
+"ui.cursor.insert"                = { fg    = "foreground",      bg = "primary",         modifiers = ["dim"]                     }	
+"ui.cursor.match"                 = { fg    = "foreground",      bg = "primary"                                                  }
+"ui.cursor.normal"                = { fg    = "foreground",      bg = "primary",        modifiers = ["dim"]                      }	
 # how to make selecting not as dark?
-"ui.cursor.select"                = { fg    = "black",      bg = "grey",        modifiers = ["dim"]  }	
+"ui.cursor.select"                = { fg    = "foreground",      bg = "primary",        modifiers = ["dim"]                      }	
 # differentiate primary from others
-"ui.cursor.primary.insert"        = { fg    = "black",      bg = "grey"                               }	
-"ui.cursor.primary.normal"        = { fg    = "black",      bg = "grey"                              }	
-"ui.cursor.primary.select"        = { fg    = "black",      bg = "grey"                                }
-"ui.cursorline.primary"           = {                            bg = "grey"                          }
-"ui.debug"                        = { fg    = "black"                                                         }
-"ui.help"                         = { fg    = "black",      bg = "white"                               }
-"ui.highlight.frameline"          = { fg    = "black",      bg = "white"                                 }
-"ui.linenr"                       = { fg    = "black"                                                     }
-"ui.linenr.selected"              = { fg    = "black"                                                  }
-"ui.menu"                         = { fg    = "black",      bg = "white"                        }
-"ui.menu.scroll"                  = { fg    = "black",      bg = "white"                        }
-"ui.menu.selected"                = { fg    = "black",    bg = "white",        modifiers = ["dim"]  }
-"ui.popup"                        = { fg    = "black",      bg = "white"                               }
+"ui.cursor.primary.insert"        = { fg    = "foreground",      bg = "primary"                                                  }	
+"ui.cursor.primary.normal"        = { fg    = "foreground",      bg = "primary"                                                  }	
+"ui.cursor.primary.select"        = { fg    = "foreground",      bg = "primary"                                                  }
+"ui.cursorline.primary"           = {                            bg = "primary"                                                  }
+"ui.debug"                        = { fg    = "foreground"                                                                       }
+"ui.help"                         = { fg    = "foreground",      bg = "background"                                               }
+"ui.highlight.frameline"          = { fg    = "foreground",      bg = "background"                                               }
+"ui.linenr"                       = { fg    = "foreground"                                                                       }
+"ui.linenr.selected"              = { fg    = "foreground"                                                                       }
+"ui.menu"                         = { fg    = "foreground",      bg = "background"                                               }
+"ui.menu.scroll"                  = { fg    = "foreground",      bg = "background"                                               }
+"ui.menu.selected"                = { fg    = "foreground",    bg = "background",        modifiers = ["dim"]                     }
+"ui.popup"                        = { fg    = "foreground",      bg = "background"                                               }
 #decide what to do with these two lines and how to reverse?
-"ui.selection"                    = {                            bg = "selection"                           }
-"ui.selection.primary"            = {                            bg = "current_line"                        }
+"ui.selection"                    = {                            bg = "gray",     underline = { style = "curl"}                                                }
+"ui.selection.primary"            = {                            bg = "secondary",    underline = { style = "curl"}, modifiers = ["dim"]                                                }
 
-"ui.statusline"                   = { fg    = "black",      bg = "white"                              }
-"ui.statusline.inactive"          = { fg    = "black",         bg = "white"                              }
-"ui.statusline.insert"            = { fg    = "black",           bg = "white",         modifiers = ["bold"] }
-"ui.statusline.normal"            = { fg    = "black",           bg = "white",        modifiers = ["bold"] }
-"ui.statusline.select"            = { fg    = "black",           bg = "white",          modifiers = ["bold"] }
-"ui.text"                         = { fg    = "black"                                                  }
-"ui.text.focus"                   = { fg    = "black"                                                        }
-"ui.virtual.indent-guide"         = { fg    = "indent"                                                      }
-"ui.virtual.inlay-hint"           = { fg    = "cyan"                                                        }
-"ui.virtual.inlay-hint.parameter" = { fg    = "cyan",            modifiers = ["italic", "dim"]              }
-"ui.virtual.inlay-hint.type"      = { fg    = "cyan",            modifiers = ["italic", "dim"]              }
-"ui.virtual.jump-label"           = { fg    = "pink",            modifiers = ["bold"]                       }
-"ui.virtual.ruler"                = { bg    = "black"                                                       }
-"ui.virtual.whitespace"           = { fg    = "whitespace"                                                  }
-"ui.virtual.wrap"                 = { fg    = "current_line"                                                }
-"ui.window"                       = { fg    = "foreground"                                                  }
+"ui.statusline"                        = { fg         = "background",      bg = "foreground"                                     }
+"ui.statusline.inactive"               = { fg         = "foreground",         bg = "background"                                  }
+"ui.statusline.insert"                 = { fg         = "foreground",           bg = "background",         modifiers = ["bold"]  }
+"ui.statusline.normal"                 = { fg         = "foreground",           bg = "background",        modifiers = ["bold"]   }
+"ui.statusline.select"                 = { fg         = "foreground",           bg = "background",          modifiers = ["bold"] }
+"ui.text"                              = { fg         = "foreground"                                                             }
+"ui.text.focus"                        = { fg         = "foreground"                                                             }
+"ui.virtual.indent-guide"              = { fg         = "foreground"                                                             }
+"ui.virtual.inlay-hint"                = { fg         = "foreground"                                                             }
+"ui.virtual.inlay-hint.parameter"      = { fg         = "foreground",            modifiers = ["italic", "dim"]                   }
+"ui.virtual.inlay-hint.type"           = { fg         = "foreground",            modifiers = ["italic", "dim"]                   }
+"ui.virtual.jump-label"                = { fg         = "foreground",            modifiers = ["bold"]                            }
+"ui.virtual.ruler"                     = { bg         = "foreground"                                                             }
+"ui.virtual.backgroundspace"           = { fg    = "foreground"                                                                  }
+"ui.virtual.wrap"                      = { fg         = "foreground"                                                             }
+"ui.window"                            = { fg         = "foreground"                                                             }
 
-"variable"                        = { fg = "black"                                                     }
-"variable.builtin"                = { fg = "black",             modifiers = ["bold"]                     }
-"variable.other"                  = { fg = "black"                                                     }
-"variable.other.member"           = { fg = "black"                                                     }
-"variable.parameter"              = { fg = "black",             modifiers = ["bold"]                     }
+"variable"                        = { fg = "foreground"                                                                          }
+"variable.builtin"                = { fg = "foreground",             modifiers = ["bold"]                                        }
+"variable.other"                  = { fg = "foreground"                                                                          }
+"variable.other.member"           = { fg = "foreground"                                                                          }
+"variable.parameter"              = { fg = "foreground",             modifiers = ["bold"]                                        }
 
 
 [palette]
-black             = "#000000"
-grey              = "#cccccc"
-white             = "#ffffff" 
-background        = "#282A36"
-comment           = "#6272A4"
-current_line      = "#44475a"
-cursorline        = "#2d303e"
-cyan              = "#8be9fd"
-darker            = "#222430"
-foreground        = "#f8f8f2"
-green             = "#50fa7b" 
-indent            = "#56596a"
-orange            = "#ffb86c" 
-pink              = "#ff79c6"
-purple            = "#BD93F9" 
-red               = "#ff5555"
-selection         = "#363848"
-whitespace        = "#586693"
-yellow            = "#f1fa8c" 
+foreground             = "#000000"
+background             = "#ffffff" 
+primary                = "#cccccc"
+secondary = "#d5dbdb"
