@@ -107,7 +107,7 @@
 "ui.menu.selected"                = { fg = "foreground", bg = "background", modifiers = ["dim"] }
 "ui.popup"                        = { fg = "foreground", bg = "background" }
 "ui.selection"                    = { bg = "secondary", underline = { style = "curl" } }
-"ui.selection.primary"            = { bg = "primary", underline = { style = "curl" }, modifiers = ["dim"] }
+"ui.selection.primary"            = { fg = "foreground", bg = "primary", underline = { style = "curl" }}
 "ui.statusline"                   = { fg = "background", bg = "foreground" }
 "ui.statusline.inactive"          = { fg = "foreground", bg = "background" }
 "ui.statusline.insert"            = { fg = "foreground", bg = "background", modifiers = ["bold"] }
