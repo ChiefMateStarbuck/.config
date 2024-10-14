@@ -8,11 +8,15 @@ A-j = "goto_next_paragraph"
 A-k = "goto_prev_paragraph"
 ";" = "goto_word"
 
-
 [editor]
 bufferline = "multiple"
+#line-number = "relative"
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[keys.normal.z]
+j = "page_cursor_half_down"
+k = "page_cursor_half_up"
