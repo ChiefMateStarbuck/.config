@@ -22,8 +22,8 @@
 "type.enum.variant"               = { modifiers = ["italic"] }
 
 "ui.background"                   = { bg = "background" }
-"ui.text"                         = { fg = "foreground" }
-"ui.text.focus"                   = { fg = "foreground" }
+"ui.bufferline"                   = { fg = "background", bg = "foreground"}
+"ui.bufferline.active"            = { fg = "foreground", bg = "background"}
 "ui.cursor"                       = { bg = "primary", modifiers = ["dim"] }
 "ui.cursor.insert"                = { fg = "primary", bg  = "secondary", modifiers  = ["dim"] }
 "ui.cursor.match"                 = { fg = "primary", bg  = "secondary" }
@@ -33,19 +33,22 @@
 "ui.cursor.primary.normal"        = { fg = "background", bg = "foreground" }
 "ui.cursor.primary.select"        = { fg = "background", bg = "foreground" }
 "ui.cursorline.primary"           = { bg = "primary" }
-"ui.menu.selected"                = { modifiers = ["dim"] }
+"ui.linenr"                       = { fg = "foreground" }
+"ui.menu"                         = { fg = "background", bg = "foreground" }
+"ui.menu.selected"                = { fg = "foreground", bg = "background"}
+"ui.popup"                        = { fg = "foreground", bg = "background" }
 "ui.selection"                    = { bg = "secondary", underline = { style = "curl" } }
 "ui.selection.primary"            = { bg = "primary", underline = { style = "curl" }}
 "ui.statusline"                   = { fg = "background", bg = "foreground" }
-"ui.statusline.inactive"          = { bg = "background" }
 "ui.statusline.insert"            = {  modifiers = ["bold"] }
 "ui.statusline.normal"            = {  modifiers = ["bold"] }
 "ui.statusline.select"            = {  modifiers = ["bold"] }
-"ui.bufferline"                   = { fg = "background", bg = "foreground"}
-"ui.bufferline.active"            = { bg = "background"}
+"ui.text"                         = { fg = "foreground" }
+"ui.text.focus"                   = { fg = "foreground" }
 "ui.virtual.inlay-hint.parameter" = { modifiers = ["italic", "dim"] }
 "ui.virtual.inlay-hint.type"      = { modifiers = ["italic", "dim"] }
 "ui.virtual.jump-label"           = { modifiers = ["bold"] }
+
 
 "variable.builtin"                = { modifiers = ["bold"] }
 "variable.parameter"              = { modifiers = ["bold"] }
