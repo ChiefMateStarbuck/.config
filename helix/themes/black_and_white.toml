@@ -24,11 +24,11 @@
 "ui.background"                   = { bg = "background" }
 "ui.bufferline"                   = { fg = "background", bg = "foreground"}
 "ui.bufferline.active"            = { fg = "foreground", bg = "background"}
-"ui.cursor"                       = { bg = "primary", modifiers = ["dim"] }
-"ui.cursor.insert"                = { fg = "primary", bg  = "secondary", modifiers  = ["dim"] }
-"ui.cursor.match"                 = { fg = "primary", bg  = "secondary" }
-"ui.cursor.normal"                = { fg = "primary", bg  = "secondary", modifiers = ["dim"] }
-"ui.cursor.select"                = { fg = "primary", bg  = "secondary", modifiers = ["dim"] }
+"ui.cursor"                       = { bg = "primary"}
+"ui.cursor.insert"                = { bg = "primary"}
+"ui.cursor.match"                 = { bg = "primary"}
+"ui.cursor.normal"                = { bg = "primary"}
+"ui.cursor.select"                = { bg = "primary"}
 "ui.cursor.primary.insert"        = { fg = "background", bg = "foreground" }
 "ui.cursor.primary.normal"        = { fg = "background", bg = "foreground" }
 "ui.cursor.primary.select"        = { fg = "background", bg = "foreground" }
