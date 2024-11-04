@@ -3,11 +3,6 @@ theme = "white_and_black"
 [keys.normal]
 # Simplifies exiting. Collapes all exits on the 'esc' key
 esc = ["collapse_selection", "keep_primary_selection"]
-# Move faster around by using Alt-hjkl
-A-l = "move_next_word_start"
-A-h = "move_prev_word_start"
-A-j = "goto_next_paragraph"
-A-k = "goto_prev_paragraph"
 # Jump straight to a word faster
 ";" = "goto_word"
 # Find some operation for ','
