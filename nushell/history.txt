@@ -1,0 +1,8 @@
+lw
+ls
+cd .config/nushell/
+ls
+h config.nu
+hx config.nu
+ls
+exit

@@ -1,12 +1,16 @@
-theme = "white_and_black"
+theme = "nord-night"
 
 [keys.normal]
 # Simplifies exiting. Collapes all exits on the 'esc' key
 esc = ["collapse_selection", "keep_primary_selection"]
 # Jump straight to a word faster
 ";" = "goto_word"
-# Find some operation for ','
+# not sure what to do with this yet
 "," = "no_op"
+
+"1" = "jump_backward"
+"3" = "jump_forward"
+
 # Move between buffer more efficiently
 "}" = "goto_next_buffer"
 "{" = "goto_previous_buffer"
