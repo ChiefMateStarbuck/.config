@@ -1,29 +1,61 @@
 theme = "nord-night"
 
+
 [keys.normal]
 # Simplifies exiting. Collapes all exits on the 'esc' key
 esc = ["collapse_selection", "keep_primary_selection"]
 # Jump straight to a word faster
 ";" = "goto_word"
-# not sure what to do with this yet
-"," = "no_op"
 
-"1" = "jump_backward"
-"3" = "jump_forward"
+# better jumping
+"," = "jump_backward"
+"<" = "jump_forward"
+
+# use less-thank greater-thank to indent/outdent
+"A-," = "indent"
+"A-." = "unindent"
+
+# Just delete. Don't save to register
+"D" = "delete_selection_noyank"
 
 # Move between buffer more efficiently
-"}" = "goto_next_buffer"
-"{" = "goto_previous_buffer"
+"A-]" = "goto_next_buffer"
+"A-[" = "goto_previous_buffer"
+"A-l" = "jump_view_right"
+"A-h" = "jump_view_left"
+"A-j" = "jump_view_down"
+"A-k" = "jump_view_up"
+
+"C-l" = "vsplit"
+"C-j" = "hsplit"
+
 
 [keys.normal.z]
 # Faster scrolling through zj/zk
 j = "page_cursor_half_down"
 k = "page_cursor_half_up"
 
+
 [editor]
 bufferline = "multiple"
+
+# BEGIN HACK TO TURN ON INLINE DIAGNOTICS
 # Not sure if I really need this. But we will see.
 #line-number = "relative"
+
+# Hopefully this can be deleted soon when diagnostics are turned on
+# 
+# Minimum severity to show a diagnostic after the end of a line:
+end-of-line-diagnostics = "hint"
+
+# Hopefully this can be deleted too.
+[editor.inline-diagnostics]
+# Minimum severity to show a diagnostic on the primary cursor's line.
+# Note that `cursor-line` diagnostics are hidden in insert mode.
+cursor-line = "error"
+# Minimum severity to show a diagnostic on other lines:
+other-lines = "error"
+# END HACK
 
 [editor.cursor-shape]
 insert = "bar"
