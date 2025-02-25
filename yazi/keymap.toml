@@ -1,0 +1,5 @@
+[input]
+prepend_keymap = [
+  { on = 'u', run = 'undo', desc = "undo the last command"},
+  { on = 'U', run = 'redo', desc = "redo the last command"}
+]
