@@ -10,10 +10,11 @@ esc = ["collapse_selection", "keep_primary_selection"]
 # better jumping
 "," = "jump_backward"
 "<" = "jump_forward"
+">" = "no_op"
 
 # use less-thank greater-thank to indent/outdent
-"A-," = "indent"
-"A-." = "unindent"
+"A-," = "unindent"
+"A-." = "indent"
 
 # Just delete. Don't save to register
 "D" = "delete_selection_noyank"
