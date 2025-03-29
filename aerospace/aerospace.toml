@@ -202,4 +202,6 @@ ctrl-shift-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
 I = 'main' # Main monitor
-N = 1 # second monitor
+O = 'main'
+N = 'secondary' # second monitor
+M = 'secondary'
