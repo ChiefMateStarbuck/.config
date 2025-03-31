@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  #git
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,30 +102,65 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#Change cursor type when switching from insert mode and normal mode
-bindkey -v
-
-# Function to change cursor to a block (normal mode)
-function zle-keymap-select {
-  if [[ $KEYMAP == vicmd ]]; then
-    echo -ne '\e[1 q'
-  else
-    echo -ne '\e[5 q'
-  fi
-}
-
-# Function to change cursor to a beam (insert mode)
-function zle-line-init {
-  echo -ne '\e[5 q'
-}
-
-zle -N zle-keymap-select
-zle -N zle-line-init
-echo -ne '\e[5 q'
-
-
 #enable oxide autocomplete
 eval "$(zoxide init zsh)"
 
+# make neovim a little shorter. turning it off for now to focus on helix
+#alias v='nvim'
 
-alias v='nvim'
+alias lg='lazygit'
+# change the default config path
+export XDG_CONFIG_HOME="$HOME/.config"
+alias gt='git-town'
+
+export PATH="$PATH:/Users/mecha/go/bin"
+
+#Enter Helix faster
+alias h="hx"
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+autoload -U compinit
+compinit
+source <(jj util completion zsh)
+
+export PATH="$PATH:/Users/mecha/.local/bin"
+export PATH="$PATH:/Users/mecha/.local/ltex-ls-16.0.0/bin"
+
+# Function to live preview changes with glow.
+function watchglow() {
+  if [ $# -ne 1 ]; then
+    echo "Usage: mdwatch <markdown_file>"
+    return 1
+  fi
+
+  if [ ! -f "$1" ]; then
+    echo "Error: File '$1' not found"
+    return 1
+  fi
+
+  # Clear screen before first render
+  clear
+  
+  # Use echo to pipe the filename to entr, which will run glow when the file changes
+  echo "$1" | entr -c glow "$1"
+}
+
+
+# Function to copy .zshrc to .config/zsh without confirmation
+backup_zshrc() {
+  # Create the directory if it doesn't exist
+  mkdir -p "$HOME/.config/zsh"
+  
+  # Copy the file, overwriting without prompt
+  cp -f "$HOME/.zshrc" "$HOME/.config/zsh/"
+  
+  echo "Copied .zshrc to ~/.config/zsh/"
+}
