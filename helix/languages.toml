@@ -31,3 +31,20 @@ auto-format = true
 
 [language-server.ltex]
 command = "/Users/mecha/.local/ltex-ls-16.0.0/bin/ltex-ls"
+
+
+[[language]]
+name = "json"
+formatter = { command = 'prettier', args = ["--parser", "json"] }
+auto-format = true
+
+
+[[language]]
+name = "svelte"
+formatter = { command = "prettier", args = [
+  "--plugin",
+  "prettier-plugin-svelte",
+  "--parser",
+  "svelte",
+] }
+auto-format = true

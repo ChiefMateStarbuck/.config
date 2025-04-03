@@ -164,3 +164,6 @@ backup_zshrc() {
   
   echo "Copied .zshrc to ~/.config/zsh/"
 }
+
+alias ls="eza --long --color=always --icons=always --no-permissions --no-user --no-time"
+alias cd="z"
