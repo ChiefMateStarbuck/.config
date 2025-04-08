@@ -22,6 +22,8 @@ esc = ["collapse_selection", "keep_primary_selection"]
 "A-j" = "jump_view_down"
 "A-k" = "jump_view_up"
 
+"X" = "extend_line_above"
+
 [keys.normal.z]
 # Faster scrolling through zk/zj
 k = "page_cursor_up"
@@ -30,6 +32,9 @@ j = "page_cursor_down"
 [editor]
 # What does this do?
 bufferline = "multiple"
+
+# Lines so i dont kill myself over python
+indent-guides.render = true
 
 # BEGIN HACK TO TURN ON INLINE DIAGNOTICS
 # Not sure if I really need this. But we will see.
