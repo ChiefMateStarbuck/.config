@@ -95,10 +95,16 @@ ctrl-k = 'focus up'
 ctrl-l = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
-ctrl-shift-h = 'move left'
-ctrl-shift-j = 'move down'
-ctrl-shift-k = 'move up'
-ctrl-shift-l = 'move right'
+ctrl-y = 'move left'
+ctrl-u = 'move down'
+ctrl-i = 'move up'
+ctrl-o = 'move right'
+
+# join, allowing for more flexible arrangments
+ctrl-shift-6 = 'join-with left'
+ctrl-shift-7 = 'join-with down'
+ctrl-shift-8 = 'join-with up'
+ctrl-shift-9 = 'join-with right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 ctrl-shift-minus = 'resize smart -50'
@@ -121,20 +127,20 @@ ctrl-d = 'workspace D'
 ctrl-e = 'workspace E'
 ctrl-f = 'workspace F'
 ctrl-g = 'workspace G'
-ctrl-i = 'workspace I'
+# ctrl-i = 'workspace I'
 ctrl-m = 'workspace M'
 ctrl-n = 'workspace N'
-ctrl-o = 'workspace O'
+# ctrl-o = 'workspace O'
 ctrl-p = 'workspace P'
 ctrl-q = 'workspace Q'
 ctrl-r = 'workspace R'
 ctrl-s = 'workspace S'
 ctrl-t = 'workspace T'
-ctrl-u = 'workspace U'
+# ctrl-u = 'workspace U'
 ctrl-v = 'workspace V'
 ctrl-w = 'workspace W'
 ctrl-x = 'workspace X'
-ctrl-y = 'workspace Y'
+# ctrl-y = 'workspace Y'
 ctrl-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
@@ -143,10 +149,10 @@ ctrl-shift-2 = 'move-node-to-workspace 2'
 ctrl-shift-3 = 'move-node-to-workspace 3'
 ctrl-shift-4 = 'move-node-to-workspace 4'
 ctrl-shift-5 = 'move-node-to-workspace 5'
-ctrl-shift-6 = 'move-node-to-workspace 6'
-ctrl-shift-7 = 'move-node-to-workspace 7'
-ctrl-shift-8 = 'move-node-to-workspace 8'
-ctrl-shift-9 = 'move-node-to-workspace 9'
+# ctrl-shift-6 = 'move-node-to-workspace 6'
+# ctrl-shift-7 = 'move-node-to-workspace 7'
+# ctrl-shift-8 = 'move-node-to-workspace 8'
+# ctrl-shift-9 = 'move-node-to-workspace 9'
 ctrl-shift-a = 'move-node-to-workspace A'
 ctrl-shift-b = 'move-node-to-workspace B'
 # ctrl-shift-c = 'move-node-to-workspace C' blocks the cancellation of terminal commands
@@ -178,6 +184,7 @@ ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 ctrl-shift-semicolon = 'mode service'
 
+
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
@@ -189,13 +196,6 @@ f = [
   'mode main',
 ] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
-
-# Add buttons to movee across screens in a vim-like way
-# These buttons conflict with the rearane buttons :(
-ctrl-shift-h = ['join-with left', 'mode main']
-ctrl-shift-j = ['join-with down', 'mode main']
-ctrl-shift-k = ['join-with up', 'mode main']
-ctrl-shift-l = ['join-with right', 'mode main']
 
 [workspace-to-monitor-force-assignment]
 Y = 'main'
