@@ -13,7 +13,7 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = ['workspace I']
+after-startup-command = ['workspace M']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -138,7 +138,7 @@ ctrl-n = 'workspace N'
 ctrl-p = 'workspace P'
 ctrl-q = 'workspace Q'
 ctrl-r = 'workspace R'
-ctrl-s = 'workspace S'
+#ctrl-s = 'workspace S'
 ctrl-t = 'workspace T'
 # ctrl-u = 'workspace U'
 ctrl-v = 'workspace V'
@@ -171,7 +171,7 @@ ctrl-shift-o = 'move-node-to-workspace O'
 ctrl-shift-p = 'move-node-to-workspace P'
 ctrl-shift-q = 'move-node-to-workspace Q'
 ctrl-shift-r = 'move-node-to-workspace R'
-ctrl-shift-s = 'move-node-to-workspace S'
+#ctrl-shift-s = 'move-node-to-workspace S'
 ctrl-shift-t = 'move-node-to-workspace T'
 ctrl-shift-u = 'move-node-to-workspace U'
 ctrl-shift-v = 'move-node-to-workspace V'
@@ -202,10 +202,5 @@ f = [
 backspace = ['close-all-windows-but-current', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-Y = 'main'
-U = 'main'
-I = 'main'      # Main monitor
-O = 'main'
-P = 'main'
+M = 'main'
 N = 'secondary' # second monitor
-M = 'secondary'

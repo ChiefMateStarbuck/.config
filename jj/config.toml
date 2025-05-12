@@ -1,0 +1,14 @@
+[user]
+name = "Samuel S. Guyah"
+email = "septimusguy@gmail.com"
+
+[signing]
+behavior = "own"
+backend = "gpg"
+key = "2E4CC06B1B15689A"
+
+[git]
+sign-on-push = true
+
+[ui]
+editor = "hx"
