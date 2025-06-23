@@ -1,5 +1,5 @@
-theme = "nord-night"
-#theme = "modus_operandi"
+#theme = "nord-night"
+theme = "modus_operandi"
 
 [keys.normal]
 # Simplifies exiting. Collapes all exits on the 'esc' key
@@ -47,6 +47,10 @@ z = [
   ':open %sh{cat /tmp/unique-file}',
   ':redraw',
 ]
+
+v = ':w'
+
+q = ':bc'
 
 [editor]
 # What does this do?
