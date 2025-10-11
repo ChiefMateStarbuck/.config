@@ -1,5 +1,6 @@
 #theme = "nord-night"
-theme = "modus_operandi"
+#theme = "modus_operandi"
+theme = "ttox"
 
 [keys.normal]
 # Simplifies exiting. Collapes all exits on the 'esc' key

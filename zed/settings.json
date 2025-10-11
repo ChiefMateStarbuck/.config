@@ -17,5 +17,5 @@
     "light": "One Light",
     "dark": "One Dark"
   },
-  "vim_mode": true
+  "helix_mode": true
 }
