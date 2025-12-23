@@ -15,6 +15,20 @@ language-servers = [
 command = "vscode-eslint-language-server"
 args = ["--stdio"]
 
+
+# 2. Tell the C++ language to use that server
+[[language]]
+name = "cpp"
+auto-format = true
+# In the new syntax, this is just a list of strings referring to the section above
+language-servers = ["clangd"]
+
+# 1. Define the clangd server configuration explicitly
+[language-server.clangd]
+command = "clangd"
+# Point clangd to your current folder (.) where compile_commands.json lives
+args = ["--compile-commands-dir=."]
+
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }

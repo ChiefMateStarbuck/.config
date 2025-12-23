@@ -1,6 +1,6 @@
 #theme = "nord-night"
 #theme = "modus_operandi"
-theme = "ttox"
+theme = "ttox_soft"
 
 [keys.normal]
 # Simplifies exiting. Collapes all exits on the 'esc' key
@@ -24,15 +24,15 @@ esc = ["collapse_selection", "keep_primary_selection"]
 "A-j" = "jump_view_down"
 "A-k" = "jump_view_up"
 
-# X should be thr opposites of x
+# X should be the opposites of x
 "X" = "extend_line_above"
 
 # Use H/L to jump between words
 "H" = "move_prev_word_start"
 "L" = "move_next_word_start"
 
-
-"A-c" = "toggle_comments"
+# not needed really. control - c does this.
+# "A-c" = "toggle_comments"
 
 # [keys.normal.z]
 # # Faster scrolling through zk/zk. not neccesary. 

@@ -14,19 +14,6 @@
                             "to": [{ "key_code": "caps_lock" }]
                         }
                     ]
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 10203,
-                        "vendor_id": 5824
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "page_up" },
-                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
-                        }
-                    ]
                 }
             ],
             "name": "Default profile",
