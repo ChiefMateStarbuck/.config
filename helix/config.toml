@@ -1,6 +1,6 @@
 #theme = "nord-night"
 #theme = "modus_operandi"
-theme = "ttox_soft"
+theme = "white_and_black"
 
 [keys.normal]
 # Simplifies exiting. Collapes all exits on the 'esc' key
@@ -31,6 +31,9 @@ esc = ["collapse_selection", "keep_primary_selection"]
 "H" = "move_prev_word_start"
 "L" = "move_next_word_start"
 
+# Y should be analagous to y. 
+Y = "yank_to_clipboard"
+
 # not needed really. control - c does this.
 # "A-c" = "toggle_comments"
 
@@ -40,7 +43,9 @@ esc = ["collapse_selection", "keep_primary_selection"]
 
 # j = "page_cursor_down"
 
+
 [keys.normal.space]
+# yazi
 z = [
   ':sh rm -f /tmp/unique-file',
   ':insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file',
@@ -49,9 +54,15 @@ z = [
   ':redraw',
 ]
 
+
+# quick write
 v = ':w'
 
+# quick buffer close
 q = ':bc'
+
+# quick reload after agent changes
+x = ':rla'
 
 [editor]
 # What does this do?
