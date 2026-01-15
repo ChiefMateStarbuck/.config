@@ -55,6 +55,6 @@
 
 [palette]
 foreground = "#000000"
-background = "#ffffff"
+background = "#E8E8E8"
 primary    = "#c9c9c9"
 secondary  = "#e3e1e1"
