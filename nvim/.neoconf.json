@@ -7,7 +7,6 @@
   },
   "neoconf": {
     "plugins": {
-
       "lua_ls": {
         "enabled": true
       }
