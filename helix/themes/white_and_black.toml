@@ -53,6 +53,22 @@
 "variable.builtin"                = { modifiers = ["bold"] }
 "variable.parameter"              = { modifiers = ["bold"] }
 
+ # Strings (e.g., "sigzil", "75Gi") -> Italic and Bold
+"string" = { modifiers = ["bold"] }
+
+# Numbers (e.g., 8, 80) -> Bold
+"constant.numeric" = { modifiers = ["bold"] }
+
+# Booleans (e.g., true, false) -> Bold
+"constant.builtin" = { modifiers = ["bold"] }
+
+# (Optional) Ensure Keys look distinct (keep them plain or style them differently)
+# In YAML, unquoted keys like 'enabled:' are usually parsed as properties or variables
+"variable" = { fg = "foreground" }
+"property" = { fg = "foreground" }
+
+"comment" = { modifiers = ["italic", "dim"] }
+
 [palette]
 foreground = "#000000"
 background = "#E8E8E8"

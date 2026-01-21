@@ -1,0 +1,9 @@
+customCommands:
+  - key: 'n'
+    context: 'localBranches'
+    prompts:
+      - type: 'input'
+        title: 'Enter branch name (will start with sg/)'
+        key: 'BranchName'
+    command: "git checkout -b sg/{{.Form.BranchName}}"
+    loadingText: 'Creating branch sg/{{.Form.BranchName}}...'
