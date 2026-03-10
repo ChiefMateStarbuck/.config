@@ -7,13 +7,6 @@ auto-format = true
 name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
-language-servers = [
-  "typescript-language-server",
-  "vscode-eslint-language-server",
-]
-[language-server.vscode-eslint-language-server]
-command = "vscode-eslint-language-server"
-args = ["--stdio"]
 
 
 # 2. Tell the C++ language to use that server
