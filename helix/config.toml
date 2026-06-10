@@ -1,4 +1,6 @@
-theme = "catppuccin_latte"
+[theme]
+light = "ttox"
+dark = "ttox"
 
 
 [keys.normal.space]
@@ -15,7 +17,7 @@ z = [
 
 [editor]
 # What does this do?
-bufferline = "multiple"
+#bufferline = "multiple"
 
 # Lines so i dont kill myself over python
 indent-guides.render = true
@@ -45,3 +47,7 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.auto-save]
+after-delay.enable = true
+after-delay.timeout = 3000  # milliseconds

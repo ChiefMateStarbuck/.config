@@ -85,3 +85,8 @@ validation = true
 [language-server.yaml-language-server.config.yaml.schemas]
 "https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
 "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"
+
+[[language]]
+name = "c-sharp"
+formatter = { command = "dotnet", args = ["csharpier", "format", "--write-stdout", "--stdin-path", "%{file_path_absolute}", "--log-level", "Error"] }
+auto-format = true
