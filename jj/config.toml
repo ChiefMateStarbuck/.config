@@ -27,7 +27,17 @@ diff-formatter = "delta"
 
 [merge-tools.delta]
 program = "delta"
-diff-args = ["--color-only", "--light", "$left", "$right"]
+diff-args = [
+  "--color-only",
+  "--light",
+  "--syntax-theme=none",
+  "--plus-style", "black #e4f2dc",
+  "--plus-non-emph-style", "black #e4f2dc",
+  "--plus-emph-style", "black #cfe7c4",
+  "--plus-empty-line-marker-style", "black #e4f2dc",
+  "$left",
+  "$right",
+]
 diff-expected-exit-codes = [0, 1]
 
 [aliases]
