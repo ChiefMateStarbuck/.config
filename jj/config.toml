@@ -5,10 +5,14 @@ email = "septimusguy@gmail.com"
 [signing]
 behavior = "own"
 backend = "gpg"
-key = "2E4CC06B1B15689A"
+key = "5007E02944916AE2"
 
 [git]
 sign-on-push = true
 
 [ui]
 editor = "hx"
+
+[colors]
+"diff added"       = { fg = "#448420" }
+"diff added token" = { fg = "#448420" }

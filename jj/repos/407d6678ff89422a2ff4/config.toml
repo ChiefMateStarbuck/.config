@@ -1,0 +1,11 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[revset-aliases]
+"trunk()" = "main@origin"
+
+[user]
+name = "Samuel Guyah"
+email = "sguyah@coreweave.com"
+
+[remotes.origin]
+auto-track-bookmarks = "glob:sg/*"

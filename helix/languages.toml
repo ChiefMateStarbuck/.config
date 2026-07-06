@@ -7,13 +7,6 @@ auto-format = true
 name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
-language-servers = [
-  "typescript-language-server",
-  "vscode-eslint-language-server",
-]
-[language-server.vscode-eslint-language-server]
-command = "vscode-eslint-language-server"
-args = ["--stdio"]
 
 
 # 2. Tell the C++ language to use that server
@@ -92,3 +85,12 @@ validation = true
 [language-server.yaml-language-server.config.yaml.schemas]
 "https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
 "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"
+
+[[language]]
+name = "gotmpl"
+file-types = ["gotmpl", "tmpl", { glob = "*.yaml.tmpl" }, { glob = "*.yml.tmpl" }]
+language-servers = ["gopls", "yaml-language-server"]
+
+[[grammar]]
+name = "gotmpl"
+source = { git = "https://github.com/ngalaiko/tree-sitter-go-template", rev = "ca26229bafcd3f37698a2496c2a5efa2f07e86bc" }
