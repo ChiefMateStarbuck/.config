@@ -17,19 +17,12 @@
 "ui.bufferline.active" = { fg = "black", bg = "white" }
 "ui.bufferline.background" = { bg = "black" }
 
-"attribute" = { bg = "soft-purple", fg = "black" }
+"attribute" = { fg = "black" }
 "comment" = { bg = "soft-purple", fg = "black" }
-"constant" = { bg = "soft-blue", fg = "black" }
-"constant.builtin" = { bg = "soft-blue", fg = "black" }
-"constant.character.escape" = { bg = "soft-blue", fg = "black" }
-"constant.numeric" = { bg = "soft-blue", fg = "black" }
-"function.builtin" = { bg = "soft-blue", fg = "black" }
-"keyword" = { bg = "soft-purple", fg = "black" }
-"keyword.directive" = { bg = "soft-purple", fg = "black" }
+"constant" = { fg = "black" }
+"keyword" = { fg = "black" }
 "string" = { bg = "soft-green", fg = "black" }
-"type" = { bg = "soft-blue", fg = "black" }
-"type.enum.variant" = { bg = "soft-blue", fg = "black" }
-"variable.builtin" = { bg = "soft-purple", fg = "black" }
+"type" = { fg = "black" }
 
 "diff.plus" = { fg = "black", bg = "soft-green" }
 "diff.minus" = { fg = "black", bg = "soft-red" }
@@ -50,6 +43,7 @@
 soft-green = "#e4f2dc"
 soft-purple = "#eadff0"
 soft-blue = "#dceaf6"
+soft-apricot = "#f3e3d3"
 soft-yellow = "#f4edcf"
 soft-red = "#f2d8d5"
 selection = "#e3e1e1"
