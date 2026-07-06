@@ -1,6 +1,4 @@
-[theme]
-light = "ttox"
-dark = "ttox"
+theme = "ttox"
 
 
 [keys.normal.space]

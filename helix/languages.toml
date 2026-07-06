@@ -94,6 +94,8 @@ language-servers = ["gopls", "yaml-language-server"]
 [[grammar]]
 name = "gotmpl"
 source = { git = "https://github.com/ngalaiko/tree-sitter-go-template", rev = "ca26229bafcd3f37698a2496c2a5efa2f07e86bc" }
+
+[[language]]
 name = "c-sharp"
 formatter = { command = "dotnet", args = ["csharpier", "format", "--write-stdout", "--stdin-path", "%{file_path_absolute}", "--log-level", "Error"] }
 auto-format = true
