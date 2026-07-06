@@ -19,6 +19,7 @@ sign-on-push = true
 
 [ui]
 editor = "hx"
+diff-formatter = "delta"
 
 [colors]
 "diff added"       = { fg = "#448420" }
