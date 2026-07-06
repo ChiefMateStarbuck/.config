@@ -24,6 +24,11 @@ editor = "hx"
 "diff added"       = { fg = "#448420" }
 "diff added token" = { fg = "#448420" }
 
+[merge-tools.delta]
+program = "delta"
+diff-args = ["--color-only", "--light", "$left", "$right"]
+diff-expected-exit-codes = [0, 1]
+
 [aliases]
 cm = ["commit", "-m"]
 adv = ["bookmark", "advance", "main", "--to", "@-"]
