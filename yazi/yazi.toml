@@ -1,4 +1,5 @@
 # [opener]
 # edit = [
 #   { run = 'hx "$@"', block = true}
+# 
 # ]

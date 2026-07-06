@@ -4,6 +4,13 @@ email = "septimusguy@gmail.com"
 
 [signing]
 behavior = "own"
+backend = "ssh"
+key = "~/.ssh/id_ed25519_jj_signing.pub"
+
+[[--scope]]
+--when.hostnames = ["CW-KWW5GWG2VF-L"]
+
+[--scope.signing]
 backend = "gpg"
 key = "5007E02944916AE2"
 
@@ -16,3 +23,8 @@ editor = "hx"
 [colors]
 "diff added"       = { fg = "#448420" }
 "diff added token" = { fg = "#448420" }
+
+[aliases]
+cm = ["commit", "-m"]
+adv = ["bookmark", "advance", "main", "--to", "@-"]
+pub = ["git", "push"]
