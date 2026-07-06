@@ -4,11 +4,16 @@ email = "septimusguy@gmail.com"
 
 [signing]
 behavior = "own"
-backend = "gpg"
-key = "2E4CC06B1B15689A"
+backend = "ssh"
+key = "/Users/mecha/.ssh/id_ed25519_jj_signing.pub"
 
 [git]
 sign-on-push = true
 
 [ui]
 editor = "hx"
+
+[aliases]
+cm = ["commit", "-m"]
+adv = ["bookmark", "advance", "main", "--to", "@-"]
+pub = ["git", "push"]
