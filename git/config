@@ -1,0 +1,22 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Samuel Guyah
+	email = 23060145+ChiefMateStarbuck@users.noreply.github.com
+[delta "sam-light"]
+	light = true
+	syntax-theme = none
+	plus-style = "black \"#e4f2dc\""
+	plus-non-emph-style = "black \"#e4f2dc\""
+	plus-emph-style = "black \"#cfe7c4\""
+	plus-empty-line-marker-style = "black \"#e4f2dc\""
+[delta "sam-dark"]
+	dark = true
+	syntax-theme = none
+	plus-style = "normal \"#17351f\""
+	plus-non-emph-style = "normal \"#17351f\""
+	plus-emph-style = "bold normal \"#235b35\""
+	plus-empty-line-marker-style = "normal \"#17351f\""

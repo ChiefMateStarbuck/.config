@@ -1,0 +1,9 @@
+#!/bin/sh
+# Pick the delta theme feature based on macOS appearance.
+# AppleInterfaceStyle only exists (as "Dark") when dark mode is on;
+# the read fails in light mode.
+if defaults read -g AppleInterfaceStyle >/dev/null 2>&1; then
+  exec delta --features sam-dark "$@"
+else
+  exec delta --features sam-light "$@"
+fi

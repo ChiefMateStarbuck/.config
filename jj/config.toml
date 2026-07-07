@@ -26,15 +26,9 @@ diff-formatter = "delta"
 "diff added token" = { fg = "#448420" }
 
 [merge-tools.delta]
-program = "delta"
+program = "/Users/mecha/.config/bin/delta-auto"
 diff-args = [
   "--color-only",
-  "--light",
-  "--syntax-theme=none",
-  "--plus-style", "black #e4f2dc",
-  "--plus-non-emph-style", "black #e4f2dc",
-  "--plus-emph-style", "black #cfe7c4",
-  "--plus-empty-line-marker-style", "black #e4f2dc",
   "$left",
   "$right",
 ]
