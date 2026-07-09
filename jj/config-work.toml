@@ -1,11 +1,11 @@
 [user]
 name = "Samuel S. Guyah"
-email = "septimusguy@gmail.com"
+email = "sguyah@coreweave.com"
 
 [signing]
 behavior = "own"
-backend = "ssh"
-key = "~/.ssh/id_ed25519_jj_signing.pub"
+backend = "gpg"
+key = "5007E02944916AE2"
 
 [git]
 sign-on-push = true
