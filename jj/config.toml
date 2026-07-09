@@ -26,12 +26,8 @@ diff-formatter = "delta"
 "diff added token" = { fg = "#448420" }
 
 [merge-tools.delta]
-program = "/Users/mecha/.config/bin/delta-auto"
-diff-args = [
-  "--color-only",
-  "$left",
-  "$right",
-]
+program = "sh"
+diff-args = ["-c", "exec \"$HOME/.config/bin/delta-auto\" \"$@\"", "delta-auto", "--color-only", "$left", "$right"]
 diff-expected-exit-codes = [0, 1]
 
 [aliases]
