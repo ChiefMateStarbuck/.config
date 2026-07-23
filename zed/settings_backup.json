@@ -7,9 +7,6 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
-  "edit_predictions": {
-    "provider": "zed"
-  },
   "icon_theme": "Zed (Default)",
   "project_panel": {
     "dock": "right"
@@ -29,6 +26,9 @@
   "git_panel": {
     "button": false,
     "dock": "left"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
