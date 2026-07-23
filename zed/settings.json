@@ -11,6 +11,11 @@
     "provider": "zed"
   },
   "icon_theme": "Zed (Default)",
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    }
+  },
   "project_panel": {
     "dock": "right"
   },
